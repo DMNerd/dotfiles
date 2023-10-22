@@ -14,5 +14,9 @@ paru -Qs fastfetch || paru -S fastfetch
 paru -Qs bpytop || paru -S bpytop
 dparu -Qs lsd || paru -S lsd
 
+if  test -f $HOME/.zshrc; then
+    rm $HOME/.zshrc
+fi
+    
 stow -t $HOME -D zsh
 stow -t $HOME -v zsh
