@@ -1,16 +1,18 @@
 #Check if stow is installed using dnf
-dnf search stow || dnf install stow
+paru -Qs stow || paru -S stow
 
 #Terminator
-dnf search terminator || dnf terminator
+paru -Qs terminator || paru -S terminator
 
 stow -t $HOME/.config/terminator -D terminator 
 stow -t $HOME/.config/terminator -v terminator
 
 #ZSH
-dnf search fastfetch || dnf fastfetch
-dnf search bpytop || dnf bpytop
-dnf search lsd || dnf lsd
+paru -Qs zsh || paru -S zsh
+
+paru -Qs fastfetch || paru -S fastfetch
+paru -Qs bpytop || paru -S bpytop
+dparu -Qs lsd || paru -S lsd
 
 stow -t $HOME -D zsh
 stow -t $HOME -v zsh
