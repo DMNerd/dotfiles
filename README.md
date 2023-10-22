@@ -4,7 +4,7 @@ My dotfiles for Manjaro Linux
 # Terminal
 
     paru -S terminator
-![Terminal](https://raw.githubusercontent.com/DMNerd/Dotfiles/main/Screenshots/Term.png "My terminal")
+![Terminal](https://raw.githubusercontent.com/DMNerd/Dotfiles/linux/Screenshots/Term.png "My terminal")
 
 ## Fetch command
 
@@ -14,13 +14,13 @@ My dotfiles for Manjaro Linux
 
     paru -S bpytop
 
-![bpytop](https://raw.githubusercontent.com/DMNerd/dotfiles/main/Screenshots/bpytop.png "bpytop")
+![bpytop](https://raw.githubusercontent.com/DMNerd/dotfiles/linux/Screenshots/bpytop.png "bpytop")
 
 ## LSDeluxe
 
     paru -S lsd    
 
-![lsdeluxe](https://raw.githubusercontent.com/DMNerd/dotfiles/main/Screenshots/lsdeluxe.png "LSDeluxe")
+![lsdeluxe](https://raw.githubusercontent.com/DMNerd/dotfiles/linux/Screenshots/lsdeluxe.png "LSDeluxe")
 
 ## The Fuck
 
