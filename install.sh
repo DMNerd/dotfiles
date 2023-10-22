@@ -14,6 +14,7 @@ stow -t $HOME/.config/terminator -v terminator
 
 #ZSH
 paru -Qs zsh || paru -S zsh
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/.config/powerlevel10k
 
 paru -Qs fastfetch || paru -S fastfetch
 paru -Qs bpytop || paru -S bpytop
