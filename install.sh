@@ -20,7 +20,7 @@ paru -Qs bpytop || paru -S bpytop
 paru -Qs lsd || paru -S lsd
 paru -Qs thefuck || paru -S thefuck
 
-if  test -f $HOME/.zshrc; then
+if ! [ -L "$HOME/.zshrc" ] && test -f $HOME/.zshrc; then
     rm $HOME/.zshrc
 fi
 
