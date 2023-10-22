@@ -14,7 +14,7 @@ stow -t $HOME/.config/terminator -v terminator
 
 #ZSH
 paru -Qs zsh || paru -S zsh
-paru -Qs pure || paru -S pure
+paru -Qs zsh-pure-prompt || paru -S zsh-pure-prompt
 
 paru -Qs fastfetch || paru -S fastfetch
 paru -Qs bpytop || paru -S bpytop
