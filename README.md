@@ -1,24 +1,24 @@
 # Dotfiles
-My dotfiles for Nobara linux
+My dotfiles for Manjaro Linux
 
 # Terminal
 
-    dnf install terminator
+    paru -S terminator
 ![Terminal](https://raw.githubusercontent.com/DMNerd/Dotfiles/main/Screenshots/Term.png "My terminal")
 
 ## Fetch command
 
-    dnf install fastfetch
+    paru -S fastfetch
     
 ## Top command
 
-    dnf install bpytop
+    paru -S bpytop
 
 ![bpytop](https://raw.githubusercontent.com/DMNerd/dotfiles/main/Screenshots/bpytop.png "bpytop")
 
 ## LSDeluxe
 
-    dnf install lsd    
+    paru -S lsd    
 
 ![lsdeluxe](https://raw.githubusercontent.com/DMNerd/dotfiles/main/Screenshots/lsdeluxe.png "LSDeluxe")
 
@@ -26,4 +26,4 @@ My dotfiles for Nobara linux
 
 Command that repairs commands
 
-    dnf install thefuck
+    paru -S thefuck
