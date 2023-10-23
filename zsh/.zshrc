@@ -1,5 +1,9 @@
 fastfetch
 
+setopt inc_append_history share_history
+SAVEHIST=10000
+HISTFILE=~/.zsh_history
+
 autoload -U promptinit; promptinit
 prompt pure
 
