@@ -15,6 +15,7 @@ stow -t $HOME/.config/terminator -v terminator
 #ZSH
 paru -Qs zsh || paru -S zsh
 paru -Qs zsh-pure-prompt || paru -S zsh-pure-prompt
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 
 paru -Qs fastfetch || paru -S fastfetch
 paru -Qs bpytop || paru -S bpytop
