@@ -15,6 +15,7 @@ stow -t $HOME/.config/terminator -v terminator
 
 #ZSH
 dnf search zsh || sudo dnf install zsh
+chsh -s $(which zsh)
 
 if ! test -d $HOME/.zsh/pure; then
     git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
