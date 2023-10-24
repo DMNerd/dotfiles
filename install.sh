@@ -17,6 +17,8 @@ stow -t $HOME/.config/terminator -v terminator
 dnf search zsh || sudo dnf install zsh
 chsh -s $(which zsh)
 
+dnf search fontawesome-fonts || sudo dnf install fontawesome-fonts 
+
 if ! test -d $HOME/.zsh/pure; then
     git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
 fi
