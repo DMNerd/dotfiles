@@ -4,7 +4,7 @@ setopt inc_append_history share_history
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
 
-fpath+=("$(brew --prefix)/share/zsh/site-functions")
+fpath+=($HOME/.zsh/pure)
 autoload -U promptinit; promptinit
 prompt pure
 

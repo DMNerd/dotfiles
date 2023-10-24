@@ -7,6 +7,7 @@ dnf search terminator || sudo dnf install terminator
 if  test -d $HOME/.config/terminator; then
     rm -rf $HOME/.config/terminator
 fi
+
 mkdir $HOME/.config/terminator
 
 stow -t $HOME/.config/terminator -D terminator 
@@ -14,8 +15,14 @@ stow -t $HOME/.config/terminator -v terminator
 
 #ZSH
 dnf search zsh || sudo dnf install zsh
-git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+
+if ! test -d $HOME/.zsh/pure; then
+    git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
+fi
+
+if ! test -d $HOME/.zsh/zsh-autosuggestions; then
+    git clone https://github.com/zsh-users/zsh-autosuggestions "$HOME/.zsh/zsh-autosuggestions"
+fi
 
 dnf search fastfetch || sudo dnf install fastfetch
 dnf search bpytop || sudo dnf install bpytop
