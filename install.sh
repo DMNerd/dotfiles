@@ -1,17 +1,30 @@
-#Check if stow is installed using homebrew
-brew list stow || brew install stow
+#Check if stow is installed using dnf
+dnf search stow || sudo dnf install stow
 
-#YABAI and SKHD
-stow -t $HOME/.config/yabai -D yabai
-stow -t $HOME/.config/yabai -v yabai
+#Terminator
+dnf search terminator || sudo dnf install terminator
 
-stow -t $HOME/.config/skhd -D skhd
-stow -t $HOME/.config/skhd -v skhd
+if  test -d $HOME/.config/terminator; then
+    rm -rf $HOME/.config/terminator
+fi
+mkdir $HOME/.config/terminator
+
+stow -t $HOME/.config/terminator -D terminator 
+stow -t $HOME/.config/terminator -v terminator
 
 #ZSH
-brew list fastfetch || brew install fastfetch
-brew list bpytop || brew install bpytop
-brew list lsd || brew install lsd
+dnf search zsh || sudo dnf install zsh
+git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+
+dnf search fastfetch || sudo dnf install fastfetch
+dnf search bpytop || sudo dnf install bpytop
+dnf search lsd || sudo dnf install lsd
+dnf search thefuck || sudo dnf install thefuck
+
+if test -f $HOME/.zshrc; then
+    rm $HOME/.zshrc
+fi
 
 stow -t $HOME -D zsh
 stow -t $HOME -v zsh
