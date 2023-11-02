@@ -8,7 +8,7 @@ fpath+=($HOME/.zsh/pure)
 autoload -U promptinit; promptinit
 prompt pure
 
-alias ls=lsd
+alias ls=exa
 alias top=bpytop
 eval $(thefuck --alias)
 

@@ -22,8 +22,6 @@ guake --restore-preferences ./guake/guake_prefs
 sudo dnf install zsh
 chsh -s $(which zsh)
 
-sudo dnf install fontawesome-fonts 
-
 if ! test -d $HOME/.zsh/pure; then
     git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
 fi
@@ -34,7 +32,7 @@ fi
 
 sudo dnf install fastfetch
 sudo dnf install bpytop
-sudo dnf install lsd
+sudo dnf install exa
 sudo dnf install thefuck
 
 if test -f $HOME/.zshrc; then
