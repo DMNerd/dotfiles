@@ -1,10 +1,10 @@
 # Dotfiles
-My dotfiles for MacOS setup
+My dotfiles for Bedrock linux. Base stratum is Pop OS (or any debian based distro)
 
 Automated install script installs all the dependencies and stows the configuration files GNU Stow utility!
 
-![Terminal](https://raw.githubusercontent.com/DMNerd/Dotfiles/main/Screenshots/Term.png "My terminal")
+![Terminal](https://raw.githubusercontent.com/DMNerd/Dotfiles/linux-fedora/Screenshots/Term.png "My terminal")
 
-![bpytop](https://raw.githubusercontent.com/DMNerd/dotfiles/main/Screenshots/bpytop.png "bpytop")  
+![bpytop](https://raw.githubusercontent.com/DMNerd/dotfiles/linux-fedora/Screenshots/bpytop.png "bpytop")
 
-![lsdeluxe](https://raw.githubusercontent.com/DMNerd/dotfiles/main/Screenshots/lsdeluxe.png "LSDeluxe")
+![lsdeluxe](https://raw.githubusercontent.com/DMNerd/dotfiles/linux-fedora/Screenshots/lsdeluxe.png "LSDeluxe")

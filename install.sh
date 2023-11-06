@@ -1,29 +1,43 @@
-#Check if stow is installed using homebrew
-brew list stow || brew install stow
+#Check if stow is installed using dnf
+sudo apt install stow
 
-#YABAI and SKHD
-stow -t $HOME/.config/yabai -D yabai
-stow -t $HOME/.config/yabai -v yabai
+#Terminator
+sudo apt install terminator
 
-stow -t $HOME/.config/skhd -D skhd
-stow -t $HOME/.config/skhd -v skhd
+if  test -d $HOME/.config/terminator; then
+    rm -rf $HOME/.config/terminator
+fi
 
-#Terminal
-brew list warp || brew install warp
+mkdir $HOME/.config/terminator
 
-brew tap homebrew/cask-fonts
-brew install font-hack-nerd-font
+stow -t $HOME/.config/terminator -D terminator 
+stow -t $HOME/.config/terminator -v terminator
 
-brew list fastfetch || brew install fastfetch
-brew list bpytop || brew install bpytop
-brew list lsd || brew install lsd
-brew list thefuck || brew install thefuck
+#Guake
+sudo apt install guake
+
+guake --restore-preferences ./guake/guake_prefs
+
+#ZSH
+sudo apt install zsh
+chsh -s $(which zsh)
+
+if ! test -d $HOME/.zsh/pure; then
+    git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
+fi
+
+if ! test -d $HOME/.zsh/zsh-autosuggestions; then
+    git clone https://github.com/zsh-users/zsh-autosuggestions "$HOME/.zsh/zsh-autosuggestions"
+fi
+
+if test -f $HOME/.zshrc; then
+    rm $HOME/.zshrc
+fi
+
+sudo apt install exa
+sudo paru -S fastfetch
+sudo paru -S bpytop
+sudo paru -S thefuck
 
 stow -t $HOME -D zsh
 stow -t $HOME -v zsh
-
-#Text Editor
-brew list cursor || brew install cursor
-
-#Raycast
-brew list raycast || brew install raycast
