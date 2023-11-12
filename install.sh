@@ -1,8 +1,31 @@
+#Config YAY
+yay --save --nocleanmenu --nodiffmenu
+
 #Check if stow is installed using dnf
-paru -Qs stow || paru -S stow
+yay -Qs stow || yay -S stow
+
+#ZSH
+yay -Qs zsh || yay -S zsh
+chsh -s $(which zsh)
+
+yay -Qs zsh-pure-prompt || yay -S zsh-pure-prompt
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+
+yay -Qs fastfetch || yay -S fastfetch
+yay -Qs bpytop || yay -S bpytop
+yay -Qs lsd || yay -S lsd
+yay -Qs thefuck || yay -S thefuck
+
+if test -f $HOME/.zshrc; then
+    rm $HOME/.zshrc
+fi
+
+stow -t $HOME -D zsh
+stow -t $HOME -v zsh
+
 
 #Terminator
-paru -Qs terminator || paru -S terminator
+yay -Qs terminator || yay -S terminator
 
 if  test -d $HOME/.config/terminator; then
     rm -rf $HOME/.config/terminator
@@ -12,19 +35,9 @@ mkdir $HOME/.config/terminator
 stow -t $HOME/.config/terminator -D terminator 
 stow -t $HOME/.config/terminator -v terminator
 
-#ZSH
-paru -Qs zsh || paru -S zsh
-paru -Qs zsh-pure-prompt || paru -S zsh-pure-prompt
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+#Guake
+yay -Qs guake || yay -S guake
+guake --restore-preferences ./guake/guake_prefs
 
-paru -Qs fastfetch || paru -S fastfetch
-paru -Qs bpytop || paru -S bpytop
-paru -Qs lsd || paru -S lsd
-paru -Qs thefuck || paru -S thefuck
-
-if test -f $HOME/.zshrc; then
-    rm $HOME/.zshrc
-fi
-
-stow -t $HOME -D zsh
-stow -t $HOME -v zsh
+#Gnome Extensions
+yay -Qs gnome-shell-extension-dash-to-panel || yay -S gnome-shell-extension-dash-to-panel
