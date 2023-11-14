@@ -1,25 +1,16 @@
 #Check if stow is installed using dnf
-sudo dnf install stow
+sudo dnf install stow -y
 
-#Terminator
-sudo dnf install terminator
-
-if  test -d $HOME/.config/terminator; then
-    rm -rf $HOME/.config/terminator
-fi
-
-mkdir $HOME/.config/terminator
-
-stow -t $HOME/.config/terminator -D terminator 
-stow -t $HOME/.config/terminator -v terminator
+#Alacritty 
+sudo dnf install alacritty -y
 
 #Guake
-sudo dnf install guake
+sudo dnf install guake -y
 
 guake --restore-preferences ./guake/guake_prefs
 
 #ZSH
-sudo dnf install zsh
+sudo dnf install zsh -y
 chsh -s $(which zsh)
 
 if ! test -d $HOME/.zsh/pure; then
@@ -34,10 +25,10 @@ if test -f $HOME/.zshrc; then
     rm $HOME/.zshrc
 fi
 
-sudo dnf install fastfetch
-sudo dnf install bpytop
-sudo dnf install exa
-sudo dnf install thefuck
+sudo dnf install fastfetch -y
+sudo dnf install bpytop -y
+sudo dnf install exa -y
+sudo dnf install thefuck -y
 
 stow -t $HOME -D zsh
 stow -t $HOME -v zsh
