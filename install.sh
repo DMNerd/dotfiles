@@ -29,9 +29,8 @@ stow -t $HOME -v zsh
 #Alacritty
 yay -Qs alacritty || yay -S alacritty
 
-#Guake
-yay -Qs guake || yay -S guake
-guake --restore-preferences ./guake/guake_prefs
+#Yakuake
+yay -Qs yakuake || yay -S yakuake
 
 #Gnome Extensions
 yay -Qs gnome-shell-extension-dash-to-panel || yay -S gnome-shell-extension-dash-to-panel
