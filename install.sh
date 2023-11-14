@@ -24,16 +24,8 @@ stow -t $HOME -D zsh
 stow -t $HOME -v zsh
 
 
-#Terminator
-yay -Qs terminator || yay -S terminator
-
-if  test -d $HOME/.config/terminator; then
-    rm -rf $HOME/.config/terminator
-fi
-mkdir $HOME/.config/terminator
-
-stow -t $HOME/.config/terminator -D terminator 
-stow -t $HOME/.config/terminator -v terminator
+#Alacritty
+yay -Qs alacritty || yay -S alacritty
 
 #Guake
 yay -Qs guake || yay -S guake
