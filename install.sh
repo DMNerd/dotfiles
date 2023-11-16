@@ -1,16 +1,18 @@
 #Config YAY
 yay --save --nocleanmenu --nodiffmenu
 
+#Fonts
+yay -Qs nerd-fonts-meta || yay -S nerd-fonts-meta
+yay -Qs ttf-ms-fonts || yay -S ttf-ms-fonts
+yay -Qs apple-fonts || yay -S apple-fonts
+
+
 #Check if stow is installed using dnf
 yay -Qs stow || yay -S stow
 
 #ZSH
 yay -Qs zsh || yay -S zsh
 chsh -s $(which zsh)
-
-#Fonts
-yay -Qs nerd-fonts-meta || yay -S nerd-fonts-meta
-yay -Qs ttf-ms-fonts || yay -S ttf-ms-fonts
 
 yay -Qs zsh-pure-prompt || yay -S zsh-pure-prompt
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
