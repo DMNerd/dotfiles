@@ -8,7 +8,9 @@ yay -Qs stow || yay -S stow
 yay -Qs zsh || yay -S zsh
 chsh -s $(which zsh)
 
-yay -Qs nerd-fonts-git || yay -S nerd-fonts-git
+#Fonts
+yay -Qs nerd-fonts-meta || yay -S nerd-fonts-meta
+yay -Qs ttf-ms-fonts || yay -S ttf-ms-fonts
 
 yay -Qs zsh-pure-prompt || yay -S zsh-pure-prompt
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
