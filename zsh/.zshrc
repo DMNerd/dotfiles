@@ -9,6 +9,8 @@ prompt pure
 
 alias ls=lsd
 alias top=bpytop
+alias update-grub=sudo grub-mkconfig -o /boot/grub/grub.cfg
+
 eval $(thefuck --alias)
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
