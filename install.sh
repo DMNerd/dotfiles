@@ -1,6 +1,11 @@
 #Config YAY
 yay --save --nocleanmenu --nodiffmenu
 
+#Kde theme
+yay -Qs materia-kde || yay -S materia-kde
+yay -Qs materia-gtk-theme || yay -S materia-gtk-theme
+yay -Qs kvantum-theme-materia || yay -S kvantum-theme-materia
+
 #Fonts
 yay -Qs nerd-fonts-meta || yay -S nerd-fonts-meta
 yay -Qs ttf-ms-fonts || yay -S ttf-ms-fonts
