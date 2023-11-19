@@ -33,8 +33,17 @@ fi
 stow -t $HOME -D zsh
 stow -t $HOME -v zsh
 
-#Alacritty
-yay -Qs alacritty || yay -S alacritty
+#Terminator
+sudo apt install terminator
+
+if  test -d $HOME/.config/terminator; then
+    rm -rf $HOME/.config/terminator
+fi
+
+mkdir $HOME/.config/terminator
+
+stow -t $HOME/.config/terminator -D terminator 
+stow -t $HOME/.config/terminator -v terminator
 
 #Yakuake
 yay -Qs yakuake || yay -S yakuake
