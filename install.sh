@@ -1,7 +1,7 @@
 #Config YAY
 yay --save --nocleanmenu --nodiffmenu
 
-#Kde theme
+#Theme
 yay -Qs materia-kde || yay -S materia-kde
 yay -Qs materia-gtk-theme || yay -S materia-gtk-theme
 yay -Qs kvantum-theme-materia || yay -S kvantum-theme-materia
@@ -11,9 +11,8 @@ yay -Qs nerd-fonts-meta || yay -S nerd-fonts-meta
 yay -Qs ttf-ms-fonts || yay -S ttf-ms-fonts
 yay -Qs apple-fonts || yay -S apple-fonts
 
-
 #Check if stow is installed using dnf
-yay -Qs stow || yay -S stow
+yay -Qs rustow-git || yay -S rustow-git
 
 #ZSH
 yay -Qs zsh || yay -S zsh
@@ -31,15 +30,11 @@ if test -f $HOME/.zshrc; then
     rm $HOME/.zshrc
 fi
 
-stow -t $HOME -D zsh
-stow -t $HOME -v zsh
-
+rustow -t $HOME -D zsh
+rustow -t $HOME -v zsh
 
 #Alacritty
-yay -Qs alacritty || yay -S alacritty
+yay -Qs alacritty-git || yay -S alacritty-git 
 
 #Yakuake
 yay -Qs yakuake || yay -S yakuake
-
-#Gnome Extensions
-yay -Qs gnome-shell-extension-dash-to-panel || yay -S gnome-shell-extension-dash-to-panel
