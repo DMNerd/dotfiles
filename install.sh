@@ -12,7 +12,7 @@ yay -Qs ttf-ms-fonts || yay -S ttf-ms-fonts
 yay -Qs apple-fonts || yay -S apple-fonts
 
 #Check if stow is installed using dnf
-yay -Qs rustow-git || yay -S rustow-git
+yay -Qs stow || yay -S stow
 
 #ZSH
 yay -Qs zsh || yay -S zsh
@@ -30,11 +30,11 @@ if test -f $HOME/.zshrc; then
     rm $HOME/.zshrc
 fi
 
-rustow -t $HOME -D zsh
-rustow -t $HOME -v zsh
+stow -t $HOME -D zsh
+stow -t $HOME -v zsh
 
 #Alacritty
-yay -Qs alacritty-git || yay -S alacritty-git 
+yay -Qs alacritty || yay -S alacritty
 
 #Yakuake
 yay -Qs yakuake || yay -S yakuake
