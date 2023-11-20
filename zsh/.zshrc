@@ -7,7 +7,7 @@ HISTFILE=~/.zsh_history
 autoload -U promptinit; promptinit
 prompt pure
 
-alias ls=lsd
+alias ls=exa
 alias top=bpytop
 alias update-grub=sudo grub-mkconfig -o /boot/grub/grub.cfg
 

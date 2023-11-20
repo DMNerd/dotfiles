@@ -21,7 +21,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosugges
 
 yay -Qs fastfetch || yay -S fastfetch
 yay -Qs bpytop || yay -S bpytop
-yay -Qs lsd || yay -S lsd
+yay -Qs exa || yay -S exa
 yay -Qs thefuck || yay -S thefuck
 
 if test -f $HOME/.zshrc; then
