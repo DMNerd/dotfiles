@@ -43,8 +43,5 @@ mkdir $HOME/.config/terminator
 stow -t $HOME/.config/terminator -D terminator 
 stow -t $HOME/.config/terminator -v terminator
 
-#Yakuake
-yay -Qs yakuake || yay -S yakuake
-
 #Gnome
 yay -S gnome-shell-extension-dash-to-dock
