@@ -2,9 +2,7 @@
 yay --save --nocleanmenu --nodiffmenu
 
 #Theme
-yay -Qs materia-kde || yay -S materia-kde
 yay -Qs materia-gtk-theme || yay -S materia-gtk-theme
-yay -Qs kvantum-theme-materia || yay -S kvantum-theme-materia
 
 #Fonts
 yay -Qs nerd-fonts-meta || yay -S nerd-fonts-meta
@@ -47,3 +45,6 @@ stow -t $HOME/.config/terminator -v terminator
 
 #Yakuake
 yay -Qs yakuake || yay -S yakuake
+
+#Gnome
+yay -S gnome-shell-extension-dash-to-dock
