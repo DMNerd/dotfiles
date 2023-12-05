@@ -45,3 +45,4 @@ stow -t $HOME/.config/terminator -v terminator
 
 #Gnome
 yay -S gnome-shell-extension-dash-to-dock
+yay -S gnome-shell-extension-caffeine
